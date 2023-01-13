@@ -10,7 +10,7 @@
 function solution(trainingData) {
   let correctAnswerTimes = []
   for (dataPoint of trainingData) {
-      if (dataPoint[1]===1) correctAnswerTimes.push(dataPoint[0])
+    if (dataPoint[1]===1) correctAnswerTimes.push(dataPoint[0])
   }
   if (correctAnswerTimes.length===0) return 0
   return correctAnswerTimes.reduce((accumVar, val) => accumVar + val, 0)/correctAnswerTimes.length
